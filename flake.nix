@@ -12,6 +12,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "backup";
           home-manager.users.wmossberg = import ./home/wmossberg.nix;
         }
       ];
