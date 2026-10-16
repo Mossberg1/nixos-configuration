@@ -55,7 +55,7 @@ local menu        = "hyprlauncher"
 -- end)
 
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("awww-daemon && awww img ~/Pictures/Wallpapers/nixos-wallpaper.png")
+  hl.exec_cmd("awww-daemon && sleep 1 && awww img ~/Pictures/Wallpapers/nixos-wallpaper.png")
 end)
 
 
