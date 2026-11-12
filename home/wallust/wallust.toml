@@ -1,0 +1,12 @@
+# Every color is taken from the wallpaper, including the ANSI slots, so the
+# shell prompt changes hue with the image rather than staying green.
+# check_contrast keeps the result readable against the generated background.
+backend = "thumb"
+color_space = "lch"
+palette = "dark16"
+check_contrast = true
+fallback_generator = "complementary"
+
+[templates]
+kitty = { template = "kitty.conf", target = "~/.cache/wallust/kitty.conf" }
+hyprland = { template = "hyprland.lua", target = "~/.cache/wallust/hyprland.lua" }

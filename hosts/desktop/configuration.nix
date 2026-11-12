@@ -16,6 +16,7 @@
       ../../modules/nvidia-driver.nix
       ../../modules/packages.nix
       ../../modules/shell.nix
+      ../../modules/wallpaper.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
