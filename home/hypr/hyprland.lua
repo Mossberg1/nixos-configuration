@@ -55,7 +55,10 @@ local menu        = "hyprlauncher"
 -- end)
 
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("awww-daemon && sleep 1 && set-wallpaper")
+  -- Two separate spawns, not a && chain: awww-daemon stays in the foreground,
+  -- so chaining meant set-wallpaper never ran at login.
+  hl.exec_cmd("awww-daemon")
+  hl.exec_cmd("sleep 2 && set-wallpaper")
 end)
 
 
